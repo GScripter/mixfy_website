@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Metas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Language" content="pt-br">
+        <meta name="author" content="Gabriel Santana">
+        <meta name="description" content="Descubra uma seleção sofisticada de relógios elegantes na loja online Tempora. Encontre estilos modernos, qualidade excepcional e marcas renomadas. Explore nossa coleção para expressar seu estilo pessoal com elegância intemporal. Compre agora e descubra a excelência relojoeira Tempora.">
+        <meta name="copyright" content="2023 Tempora">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/comments.css">
+        <title>Tempora</title>
+    </head>
+    <body>
+        <header>
+            <div class="topbar d-flex justify-content-between">
+                <a class="logo" href="index.html">Tempora</a>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="#"><i class="bi bi-person-circle"></i></a>
+                    <a href="#"><i class="bi bi-cart3"></i> <span>20</span></a>
+
+                    <input id="chk" type="checkbox">
+                    <label for="chk">
+                        <div class="hamburger-container">
+                            <span class="hamburger"></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div id="dropdown" class="dropdown">
+                <div class="dropdown-top d-lg-flex flex-lg-row-reverse justify-content-between align-items-center">
+                    <div class="d-lg-flex align-items-center">
+                        <!-- Search -->
+                        <form class="search" action="">
+                            <input type="search" required="required" placeholder=" Buscar">
+                            <button><i class="bi bi-search"></i></button>
+                        </form>
+
+                        <!-- Translate and Theme -->
+                        <div class="d-flex align-items-center">
+                            <select onchange="doGTranslate(this);"><option value="">Traduzir</option><option value="pt|en">Inglês</option><option value="pt|pt">Português</option><option value="pt|es">Espanhol</option></select><div id="google_translate_element2" style="width: 0px; overflow: hidden;"></div>
+                            <span class="theme-icon"><i class="bi bi-circle-half"></i></span>
+                        </div>
+                    </div>
+                    <!-- Social Media -->
+                    <ul class="social-media d-flex">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="bi bi-envelope"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Navbar -->
+                <div class="dropdown-bottom">
+                    <nav class="navbar">
+                        <ul class="d-lg-flex">
+                            <li class="navbar-item active"><a href="#">Home</a></li>
+                            <li class="navbar-item"><a href="#">Home</a></li>
+                            <li class="navbar-item"><a href="#">Home</a></li>
+                            <li class="navbar-item"><a href="#">Home</a></li>
+                            <li class="navbar-item"><a href="#">Home</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Cookie Alert -->
+            <div class="cookie-alert"> 
+                <div class="container row m-auto d-lg-flex align-items-center">
+                    <div class="col-lg-2"><img src="https://img.icons8.com/ios-filled/100/cookie.png" alt="cookie"/></div>
+                    <div class="col-lg-7 text-lg-start">
+                        <h3>Consentimento de Cookies</h3>
+                        <p>Utilizamos cookies para melhorar a sua experiência no site. Ao continuar navegando, você informa estar de acordo com essa utilização. Para visualizar os termos de uso e política de privacidade clique em ler mais.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <button id="btn-cookie" class="btn btn-success">aceitar</button>
+                        <a class="text-primary" href="#">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Whatsapp Support -->
+            <div class="whatsapp-support">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+
+            <!-- Comments -->
+            <div class="row comments container g-3">
+                <div class="col-12">
+                    <!-- Comment Summary -->
+                    <div class="comment-summary">
+                        <div class="total-rating">
+                            <p class="total-ratings">Total de Avaliações: 100</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+
+                        <div class="stars-breakdown">
+                            <div class="star-rating">
+                                <span class="star">5 estrelas</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                                <span class="rating-percentage">80%</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star">4 estrelas</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 15%;"></div>
+                                </div>
+                                <span class="rating-percentage">15%</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star">3 estrelas</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 5%;"></div>
+                                </div>
+                                <span class="rating-percentage">5%</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star">2 estrelas</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 5%;"></div>
+                                </div>
+                                <span class="rating-percentage">2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment Sort -->
+                    <div class="comments-sort">
+                        <label for="comment-order">Ordenar por:</label>
+                        <select name="comment-order" id="comment-order">
+                            <option value="recente">Mais Recente</option>
+                            <option value="antigo">Mais Antigo</option>
+                            <option value="maior-avaliacao">Maior Avaliação</option>
+                            <option value="menor-avaliacao">Menor Avaliação</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="comment-section">
+                        <div class="user-info">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/hammer-and-balance.jpg" alt="Imagem do usuário">
+                            <p class="user-name">Nome do Usuário</p>
+                        </div>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h3 class="comment-title">Título do Comentário</h3>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam varius purus non risus consequat, et bibendum mauris rhoncus.
+                            Quisque nec arcu non nulla tincidunt lacinia. Duis sit amet dapibus nulla,
+                            eu tincidunt ipsum. Maecenas id volutpat justo, a sagittis ligula.
+                            Quisque ultricies velit nec fermentum facilisis.
+                        </p>
+                        <div class="comment-images">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                        </div>
+                        <div class="ratings-summary">
+                            <p class="total-ratings">Total de Avaliações: 50</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="comment-section">
+                        <div class="user-info">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/hammer-and-balance.jpg" alt="Imagem do usuário">
+                            <p class="user-name">Nome do Usuário</p>
+                        </div>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h3 class="comment-title">Título do Comentário</h3>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam varius purus non risus consequat, et bibendum mauris rhoncus.
+                            Quisque nec arcu non nulla tincidunt lacinia. Duis sit amet dapibus nulla,
+                            eu tincidunt ipsum. Maecenas id volutpat justo, a sagittis ligula.
+                            Quisque ultricies velit nec fermentum facilisis.
+                        </p>
+                        <div class="comment-images">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                        </div>
+                        <div class="ratings-summary">
+                            <p class="total-ratings">Total de Avaliações: 50</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="comment-section">
+                        <div class="user-info">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/hammer-and-balance.jpg" alt="Imagem do usuário">
+                            <p class="user-name">Nome do Usuário</p>
+                        </div>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h3 class="comment-title">Título do Comentário</h3>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam varius purus non risus consequat, et bibendum mauris rhoncus.
+                            Quisque nec arcu non nulla tincidunt lacinia. Duis sit amet dapibus nulla,
+                            eu tincidunt ipsum. Maecenas id volutpat justo, a sagittis ligula.
+                            Quisque ultricies velit nec fermentum facilisis.
+                        </p>
+                        <div class="comment-images">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                        </div>
+                        <div class="ratings-summary">
+                            <p class="total-ratings">Total de Avaliações: 50</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="comment-section">
+                        <div class="user-info">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/hammer-and-balance.jpg" alt="Imagem do usuário">
+                            <p class="user-name">Nome do Usuário</p>
+                        </div>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h3 class="comment-title">Título do Comentário</h3>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam varius purus non risus consequat, et bibendum mauris rhoncus.
+                            Quisque nec arcu non nulla tincidunt lacinia. Duis sit amet dapibus nulla,
+                            eu tincidunt ipsum. Maecenas id volutpat justo, a sagittis ligula.
+                            Quisque ultricies velit nec fermentum facilisis.
+                        </p>
+                        <div class="comment-images">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                        </div>
+                        <div class="ratings-summary">
+                            <p class="total-ratings">Total de Avaliações: 50</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="comment-section">
+                        <div class="user-info">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/hammer-and-balance.jpg" alt="Imagem do usuário">
+                            <p class="user-name">Nome do Usuário</p>
+                        </div>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h3 class="comment-title">Título do Comentário</h3>
+                        <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam varius purus non risus consequat, et bibendum mauris rhoncus.
+                            Quisque nec arcu non nulla tincidunt lacinia. Duis sit amet dapibus nulla,
+                            eu tincidunt ipsum. Maecenas id volutpat justo, a sagittis ligula.
+                            Quisque ultricies velit nec fermentum facilisis.
+                        </p>
+                        <div class="comment-images">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                            <img src="https://gabrielsantos198.github.io/TudoComercio/imgs/advocacy.jpeg" alt="Imagem 1">
+                        </div>
+                        <div class="ratings-summary">
+                            <p class="total-ratings">Total de Avaliações: 50</p>
+                            <p class="average-rating">Média: 4.5</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="col-12">
+                    <ul class="pagination d-flex align-items-center justify-content-center">
+                        <li class="pagination-item"><a href="#"><i class="bi bi-arrow-left-circle-fill"></i></a></li>
+                        <li class="pagination-item"><a href="#">1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                        <li class="pagination-item"><a class="active" href="#">4</a></li>
+                        <li class="pagination-item"><a href="#">5</a></li>
+                        <li class="pagination-item"><a href="#">6</a></li>
+                        <li class="pagination-item"><a href="#"><i class="bi bi-arrow-right-circle-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section class="infobar">
+                <div class="row container m-auto">
+                    <div class="col-12 col-md-6 col-lg-4 infobar-item">
+                        <i class="bi bi-shield-check"></i>
+                        <div>
+                            <h2>Compra Garantida</h2>
+                            <p>Loja registrada e com certificado SSL.</p>
+                        </div>
+                    </div>
+
+                    <div class="infobar-item my-3 my-md-0 col-12 col-md-6 col-lg-4">
+                        <i class="bi bi-x-diamond"></i>
+                        <div>
+                            <h2>Pagamento Seguro </h2>
+                            <p>Ambiente fortemente seguro para pagamentos</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 infobar-item">
+                        <i class="bi bi-headset"></i>
+                        <div>
+                            <h2>Suporte Rápido </h2>
+                            <p>Atendimento de segunda à sexta 10h às 16h.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer-container">
+                <div class="row m-auto container">
+                    <section class="col-12 col-lg-8 col-xl-6">
+                        <h2>CATEGORIAS</h2>
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <ul>
+                                    <li><a href="#">Feminino</a></li>
+                                    <li><a href="#">Masculino</a></li>
+                                    <li><a href="#">Infantil</a></li>
+                                    <li><a href="#">A prova d'água</a></li>
+                                    <li><a href="#">Automático</a></li>
+                                    <li><a href="#">Mecânico</a></li>
+                                    <li><a href="#">Luxuoso</a></li>
+                                    <li><a href="#">Simples</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <ul>
+                                    <li><a href="#">Casual</a></li>
+                                    <li><a href="#">Clássico</a></li>
+                                    <li><a href="#">Raridade</a></li>
+                                    <li><a href="#">Importado</a></li>
+                                    <li><a href="#">Extravagante</a></li>
+                                    <li><a href="#">m</a></li>
+                                    <li><a href="#">Luxuoso</a></li>
+                                    <li><a href="#">Simples</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <ul>
+                                    <li><a href="#">Feminino</a></li>
+                                    <li><a href="#">Masculino</a></li>
+                                    <li><a href="#">Infantil</a></li>
+                                    <li><a href="#">A prova d'água</a></li>
+                                    <li><a href="#">Automático</a></li>
+                                    <li><a href="#">Mecânico</a></li>
+                                    <li><a href="#">Luxuoso</a></li>
+                                    <li><a href="#">Simples</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col-12 col-lg-4 col-xl-3">
+                        <h2>AJUDA</h2>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Termos de Uso e Condições</a></li>
+                            <li><a href="#">Informações e Políticas de Envio</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Políticas de Devolução, Troca e Reembolso</a></li>
+                            <li><a href="#">Termos de Serviços</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="copyright col-12 col-lg-6 col-xl-3">
+                        <h2>TEMPORA</h2>
+                        <p>© 2023, Tempora. Todos os direitos reservados.</p>
+                        <p>RAZÃO SOCIAL: AA INTERMEDIACAO DE NEGOCIOS LTDA | CNPJ: 34.316.956/0001-19</p>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <!-- My Script -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+
+
+

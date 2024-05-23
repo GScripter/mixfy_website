@@ -1,0 +1,34 @@
+.pagination{
+    margin: 30px 0;
+
+    &-item{
+        a{
+            color: $black;
+            text-decoration: none;
+            font-size: $small;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            @include laptop{
+                &{
+                    font-size: $medium;
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        .active{
+            background-color: $pure-orange;
+            color: $white-smoke;
+        }
+
+        &:first-child a, &:last-child a{
+            font-size: $large;
+            color: $black;
+        }
+    }
+}

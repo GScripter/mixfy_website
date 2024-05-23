@@ -1,0 +1,15 @@
+@import '../style.scss';
+@import '../comments.scss';
+@import '../pagination.scss';
+
+main{
+    .comments{
+        margin: 100px auto 0 auto;
+
+        @include laptop{
+            &{
+                margin-top: 150px;
+            }
+        }
+    }
+}

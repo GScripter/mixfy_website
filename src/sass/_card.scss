@@ -1,0 +1,45 @@
+.card{
+    border: none;
+
+    &:hover{
+        filter: brightness(96%);
+    }
+
+    .card-body{
+        padding: 10px 3px;
+        color: $black;
+
+        h3{
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Número de linhas que deseja exibir */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: $black;
+            font-size: $small;
+            margin-top: 5px;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        .old-price{
+            text-decoration: line-through;
+            margin-right: 5px;
+            opacity: .7;
+            font-size: $nano;
+        }
+
+        .current-price{
+            font-size: $small;
+            margin-right: 5px;
+            color: $pure-orange;
+            font-weight: 600;
+        }
+
+        .shipping{
+            color: #00A650;
+            font-size: $nano;
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Metas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Language" content="pt-br">
+        <meta name="author" content="Gabriel Santana">
+        <meta name="description" content="">
+        <meta name="copyright" content="2023 MixFy">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/products.css">
+        <title>MixFy</title>
+    </head>
+    <body>
+        <header>
+            <!-- Topbar -->
+            <div class="topbar d-flex justify-content-between align-items-center">
+                <input id="chk" type="checkbox">
+                <label for="chk" class="d-lg-none hamburger">
+                    <span></span>
+                </label>
+                <a class="d-none d-lg-block" href="#"><h1>MixFy</h1></a>
+                <form action="">
+                    <input type="search" placeholder="Buscar Produtos">
+                    <button><i class="bi bi-search"></i></button>
+                </form>
+
+                <nav>
+                    <a href="#"><i class="bi bi-person-circle"></i></a>
+                    <a class="mx-4" href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#"><i class="bi bi-cart3"></i> <span>20</span></a>
+                </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-top d-lg-none">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/18/19/53/crocodile-8003173_1280.jpg" alt="">
+                    <a href="#" class="btn-config">Configuração</a>
+                </div>
+                <nav class="sidebar-navbar">
+                    <a href="#"><i class="bi bi-house"></i> Início</a>
+                    <a href="#"><i class="bi bi-info-circle"></i> Empresa</a>
+                    <a class="d-lg-none" href="#"><i class="bi bi-bag"></i> Carrinho</a>
+                    <a class="d-lg-none" href="#"><i class="bi bi-heart"></i> Salvos</a>
+                    <a href="#"><i class="bi bi-bell"></i> Notificações</a>
+                    <a href="#"><i class="bi bi-search"></i> Buscar</a>
+
+                    <!-- Helper -->
+                    <div class="mx-3">
+                        <div id="btn-helper"><i class="bi bi-chat-dots"></i> Ajuda</div> 
+                        <ul class="helper-submenu">
+                            <li><a href="#"><i class="bi bi-question-circle"></i> FaQ</a></li>
+                            <li><a href="#"><i class="bi bi-headset"></i> Atendimento</a></li>
+                            <li><a href="#"><i class="bi bi-shield-lock"></i> Políticas</a></li>
+                            <li><a href="#"><i class="bi bi-file-text"></i> Termos de Uso</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-clockwise"></i> Devolução</a></li>
+                            <li><a href="#"><i class="bi bi-truck"></i> Acompanhar Pedidos</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="mx-3">
+                        <div id="btn-categories"><i class="bi bi-grid-3x3"></i> Categorias</div>
+                        <ul class="categories-submenu">
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico MecânicoMecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                            <li><a href="#">Automático Mecânico</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Banner -->
+            <div class="banner">
+                <img src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_640.jpg" alt="">
+                <h1>PRODUTOS</h1>
+            </div>
+
+            <!-- Cookie Alert -->
+            <div class="cookie-alert"> 
+                <div class="container row m-auto d-lg-flex align-items-center">
+                    <div class="col-lg-2"><img src="https://img.icons8.com/ios-filled/100/cookie.png" alt="cookie"/></div>
+                    <div class="col-lg-7 text-lg-start">
+                        <h3>Consentimento de Cookies</h3>
+                        <p>Utilizamos cookies para melhorar a sua experiência no site. Ao continuar navegando, você informa estar de acordo com essa utilização. Para visualizar os termos de uso e política de privacidade clique em ler mais.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <button id="btn-cookie" class="btn btn-success">aceitar</button>
+                        <a class="text-primary" href="#">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <section class="products">
+                <div class="row container m-auto">
+                    <!-- Sort Products -->
+                    <div class="col-12">
+                        <div class="sort-products justify-content-lg-end mb-3">
+                            <label for="sort-select">Ordenar por:</label>
+                            <select id="sort-select">
+                                <option value="default">Padrão</option>
+                                <option value="price-asc">Preço: Menor para Maior</option>
+                                <option value="price-desc">Preço: Maior para Menor</option>
+                                <option value="name-asc">Nome: A-Z</option>
+                                <option value="name-desc">Nome: Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Products -->
+                    <div class="row g-2">
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                        <div class="col-4 col-md-3 col-xl-2 mb-4">
+                            <article class="card">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/degkn8uwg/image/upload/v1/store_media/products/2023/01/27/436881892-12409706_nnlrpj" alt="">
+                                    <div class="card-body">
+                                        <span class="old-price">R$ 100,00 </span><br/>
+                                        <span class="current-price">R$ 100,00 </span>
+                                        <span class="shipping">Frete grátis</span>
+                                        <h3>Kit Prong Cravejado Corrente + Pulseira Promoção Especial (ENTREGA EXPRESSA)</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div> 
+                    </div>
+                    <!-- Pagination -->
+                    <div class="col-12">
+                        <ul class="pagination d-flex align-items-center justify-content-center">
+                            <li class="pagination-item"><a href="#"><i class="bi bi-arrow-left-circle-fill"></i></a></li>
+                            <li class="pagination-item"><a href="#">1</a></li>
+                            <li class="pagination-item"><a href="#">2</a></li>
+                            <li class="pagination-item"><a href="#">3</a></li>
+                            <li class="pagination-item"><a class="active" href="#">4</a></li>
+                            <li class="pagination-item"><a href="#">5</a></li>
+                            <li class="pagination-item"><a href="#">6</a></li>
+                            <li class="pagination-item"><a href="#"><i class="bi bi-arrow-right-circle-fill"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="infobar">
+                <div class="row container m-auto">
+                    <div class="col-12 col-md-6 col-lg-4 infobar-item">
+                        <i class="bi bi-shield-check"></i>
+                        <div>
+                            <h2>Compra Garantida</h2>
+                            <p>Loja registrada e com certificado SSL.</p>
+                        </div>
+                    </div>
+
+                    <div class="infobar-item my-3 my-md-0 col-12 col-md-6 col-lg-4">
+                        <i class="bi bi-x-diamond"></i>
+                        <div>
+                            <h2>Pagamento Seguro </h2>
+                            <p>Ambiente fortemente seguro para pagamentos</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 infobar-item">
+                        <i class="bi bi-headset"></i>
+                        <div>
+                            <h2>Suporte Rápido </h2>
+                            <p>Atendimento de segunda à sexta 10h às 16h.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="subscribe col-12 col-md-6 col-xl-4">
+                            <h2>Fique por dentro das novidades</h2>
+                            <p class="secondary-color">Inscreva-se para saber em primeiro mão</p>
+                            <form class="d-flex" action="">
+                                <input class="form-control" type="email" placeholder="Digite o seu e-mail">
+                                <button>Inscrever</button>
+                            </form>
+                        </div>
+
+                        <div class="social d-md-flex justify-content-center col-12 col-md-6 col-xl-4">
+                            <div>
+                                <h2>Redes Sociais</h2>
+                                <ul>
+                                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="copyright mt-md-5 mt-xl-0 col-12 col-md-6 col-xl-4">
+                            <h2>MixFy</h2>
+                            <p>© <span class="date">2024</span> MixFy. Todos os direitos reservados.</p>
+                        </div>
+
+                        <div class="text-center mt-4 col-12">
+                            <p>Tudo posso naquele que me fortalece. <i class="bi bi-book"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <!-- My Script -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+
