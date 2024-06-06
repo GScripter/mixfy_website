@@ -1,11 +1,7 @@
 @import '../style.scss';
 @import '../card.scss';
+@import '../pagination.scss';
 @import '../comments.scss';
-@include desktop{
-    .col-xl-3{
-        max-width: 20%;
-    }
-}
 
 main{
     margin-top: 100px;
@@ -22,7 +18,7 @@ main{
             width: 100%;
             height: 400px;
             object-fit: cover;
-            border: 10px solid $light-gray;
+            border: 10px solid $third-color;
             border-bottom: none;
         }
 
@@ -30,7 +26,7 @@ main{
             position: absolute;
             bottom: 15px;
             right: 25px;
-            color: $white;
+            color: #fff;
             font-size: $small;
 
             &:hover{
@@ -44,9 +40,9 @@ main{
 
         .thumbnails{
             overflow-x: scroll;
-            background-color: $light-gray;
+            background-color: $third-color;
             padding: 5px 0;
-            border: 10px solid $light-gray;
+            border: 10px solid $third-color;
 
             &::-webkit-scrollbar {
                 display: none; /* Hide scrollbar for Chrome, Safari and Opera */
@@ -108,8 +104,10 @@ main{
         }
 
         .btn-back{
-            background-color: $light-gray;
-            color: $black;
+            background-color: $secondary-color;;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
         }
     }
 
@@ -118,16 +116,16 @@ main{
         @include laptop{
             &{
                 position: absolute;
-                top: 0;
+                top: 180px;
                 left: calc(50% + 30px);
             }
         }
 
         .btn-show-comments{
-            margin-top: 20px;
-            background-color: $light-gray;
-            color: $black;
-            padding: 8px 30px;
+            background-color: $secondary-color;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
         }
     }
 
@@ -142,15 +140,10 @@ main{
         }
 
         h2{
-            font-size: $medium;
+            font-size: $large;
             text-align: center;
             margin-bottom: 25px;
         }
-
-        .card{
-            width: calc(50% - 4px);
-            max-width: 202px;
-            margin: 0 4px 4px 0;
-        }
     }
 }
+

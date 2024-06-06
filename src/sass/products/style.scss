@@ -22,7 +22,7 @@ main{
             transform: translate(-50%, -50%);
             font-size: $large;
             font-family: 'Playfair Display SC', serif;
-            color: $white-smoke;
+            color: $primary-color;
         }
 
         @include laptop{
@@ -78,7 +78,7 @@ main{
             opacity: 0;
             transition: opacity 1s;
             border: none;
-            background-color: $white-smoke;
+            background-color: $primary-color;
         }
     }
 }

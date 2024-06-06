@@ -3,7 +3,7 @@
 
     &-item{
         a{
-            color: $black;
+            color: $secondary-color;
             text-decoration: none;
             font-size: $small;
             width: 30px;
@@ -22,13 +22,12 @@
         }
 
         .active{
-            background-color: $pure-orange;
-            color: $white-smoke;
+            background-color: $third-color;
         }
 
         &:first-child a, &:last-child a{
             font-size: $large;
-            color: $black;
+            color: $secondary-color;
         }
     }
 }

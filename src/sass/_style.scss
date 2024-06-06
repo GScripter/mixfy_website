@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto:wght@300;400&display=swap');
 
 // Site Palette
-$white-smoke: #FAFAFA;
-$black: #080808;
-$pure-orange: #FF9900;
+$primary-color: #FAFAFA;
+$secondary-color: #000;
+$third-color: #DDDDDD;
 
 // Site Font Size
 $nano: 13px;
@@ -51,7 +51,7 @@ ul{
 }
 
 body{
-    background-color: $white-smoke;
+    background-color: $primary-color;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -69,7 +69,7 @@ header{
         position: fixed;
         width: 100%;
         z-index: 4;
-        background-color: $pure-orange;
+        background-color: $secondary-color;
         font-size: $large;
 
         @include laptop{
@@ -80,8 +80,8 @@ header{
 
         nav{
             a{
-                color: $black;
                 right: 10px;
+                color: $primary-color;
 
                 &:nth-child(1), &:nth-child(2){
                     display: none;
@@ -89,17 +89,18 @@ header{
 
                 &:last-child{
                     position: relative;
-                }
+                    color: #fff;
 
-                span{
-                    font-size: $nano;
-                    position: absolute;
-                    top: -6px;
-                    left: 20px;
-                    background-color: $black;
-                    color: $white-smoke;
-                    border-radius: 50%;
-                    padding: 0 3px;
+                    span{
+                        background-color: $third-color;
+                        color: $secondary-color;
+                        font-size: $nano;
+                        position: absolute;
+                        top: -6px;
+                        left: 20px;
+                        border-radius: 50%;
+                        padding: 0 3px;
+                    }
                 }
 
                 @include laptop{
@@ -113,7 +114,7 @@ header{
         h1{
             font-size: $large;
             font-family: 'Playfair Display SC', serif;
-            color: $black;
+            color: $primary-color;
         }
 
         form{
@@ -130,16 +131,15 @@ header{
                 width: 100%;
                 border-radius: 30px;
                 padding: 0 10px;
-                background-color: $white-smoke;
             }
 
             button{
-                height: 36px;
+                height: 40px;
                 font-size: $small;
-                top: 10px;
+                top: 7px;
                 position: absolute;
+                background-color: $third-color;
                 right: 0;
-                background-color: $white-smoke;
                 border-radius: 0 30px 30px 0;
                 border: none;
                 padding: 0 10px;
@@ -160,20 +160,20 @@ header{
 
             span{
                 display: block;
-                background-color: $black;
                 width: 30px;
                 height: 2.5px;
                 position: relative;
                 z-index: 2;
+                background-color: #fff;
 
                 &:before, &:after{
-                    background-color: $black;
                     content: '';
                     display: block;
                     width: 30px;
                     height: 2.5px;
                     position: absolute;
                     transition: .5s;
+                    background-color: #fff;
                 }
 
                 &:before{
@@ -191,7 +191,6 @@ header{
         width: 60%;
         max-width: 300px;
         height: 100vh;
-        background-color: $white-smoke;
         position: fixed;
         z-index: 4;
         top: 0;
@@ -199,6 +198,7 @@ header{
         overflow-Y: scroll;
         left: -70%;
         transition: .3s;
+        background-color: $primary-color;
 
         &::-webkit-scrollbar {
             display: none; /* Hide scrollbar for Chrome, Safari and Opera */
@@ -210,7 +210,7 @@ header{
         }
 
         &-top{
-            background-color: $pure-orange;
+            background-color: $secondary-color;
             padding: 20px 15px;
 
             img{
@@ -221,15 +221,16 @@ header{
             }
 
             .btn-config{
-                background-color: $black;
-                color: $white-smoke;
                 padding: 10px;
                 border-radius: 30px;
+                background-color: $third-color;
+                color: #000;
             }
         }
 
         &-navbar{
             padding: 20px 5px;
+            background-color: $primary-color;
 
             @include laptop{
                 &{
@@ -241,7 +242,6 @@ header{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $white-smoke;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                     z-index: 4;
                     margin: 0;
@@ -260,11 +260,11 @@ header{
             a{
                 width: 100%;
                 font-size: $small + 3px;
-                color: $black;
                 padding: 5px 15px;
                 display: block;
                 margin-bottom: 10px;
                 transition: .3s;
+                color: #000;
 
                 &:hover{
                     margin-left: 5px;
@@ -299,7 +299,8 @@ header{
             .categories-submenu, .helper-submenu{
                 height: 0px;
                 overflow: hidden;
-                margin: 10px 0;
+                padding: 10px 0;
+                background-color: $primary-color;
 
                 a{
                     font-size: $small;
@@ -313,17 +314,18 @@ header{
                 @include laptop{
                     &{
                         position: absolute;
-                        top: 30px;
+                        top: 40px;
                         text-align: center;
                         max-width: 250px;
+                        padding: 0;
 
                         a{
-                            background-color: $white-smoke;
                             margin-bottom: 0px;
 
                             &:hover{
                                 opacity: 1;
-                                background-color: $pure-orange;
+                                background-color: $secondary-color;
+                                color: #fff;
                             }
                         }
                     }
@@ -335,7 +337,7 @@ header{
 
                 @include laptop{
                     &{
-                        height: 500px;
+                        height: 400px;
                         overflow: scroll;
                     }
 
@@ -362,12 +364,12 @@ main{
         transform: translate(-50%, -50%);
         padding: 15px;
         text-align: center;
-        background-color: $white-smoke;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 10px;
         width: 90%;
         max-width: 500px;
         display: none;
+        background-color: $third-color;
 
         button{
             margin-right: 20px;
@@ -398,12 +400,12 @@ main{
 
 footer{
     .infobar{
-        background-color: $pure-orange;
         padding: 50px 0;
+        background-color: $third-color;
 
         &-item{
             display: flex;
-            color: $black;
+            color: $secondary-color;
 
             i{
                 font-size: $large;
@@ -418,13 +420,12 @@ footer{
     }
 
     .footer-container{
-        background-color: $black;
+        background-color: $secondary-color;
         padding-top: 60px;
-        color: $white-smoke;
 
         h2{
             font-size: $small + 2px;
-            color: $pure-orange;
+            color: $primary-color;
             margin-bottom: 20px;
             font-weight: bold;
         }
@@ -438,9 +439,8 @@ footer{
                 }
 
                 button{
-                    background-color: $pure-orange;
+                    background-color: $third-color;
                     border-radius: 0 10px 10px 0;
-                    color: $white-smoke;
                     padding: 5px;
                     border: none;
                 }
@@ -468,9 +468,9 @@ footer{
                         justify-content: center;
                         align-items: center;
                         margin-right: 10px;
-                        color: $white-smoke;
                         font-size: $medium;
                         transition: .3s;
+                        color: $primary-color;
 
                         &:hover{
                             transform: rotate(50deg);
@@ -482,6 +482,7 @@ footer{
 
         p{
             font-size: $small;
+            color: $primary-color;
         }
     }
 }

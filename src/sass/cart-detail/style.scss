@@ -1,0 +1,147 @@
+@import '../style.scss';
+
+.cart-card{
+    margin: 150px auto auto auto;
+	max-width: 950px;
+	width: 90%;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1rem;
+	border: transparent;
+    position: relative;
+
+    .col-2, .col{
+        padding: 0 1vh;
+    }
+
+    a{
+        padding: 0.6vh;
+        color: $secondary-color;
+    }
+
+    @include laptop{
+        &{
+            margin: 200px auto auto auto;
+        }
+    }
+
+    &-title{
+        margin-bottom: 5vh;
+        margin-top: 50px;
+        padding: 10px;
+
+        h4{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    &-main{
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+
+        @include laptop{
+            &{
+                border-bottom-left-radius: 1rem;
+                border-top-left-radius: 1rem;
+            }
+        }
+
+        img{
+            width: 3.5rem;
+        }
+    }
+
+    .back-to-shop{
+        margin-top: 4.5rem;
+        margin-bottom: 50px;
+    }
+
+    &-summary{
+        background-color: $third-color;
+        padding: 4vh;
+		border-top-right-radius: unset;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+
+        @include laptop{
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 0rem;
+        }
+        
+        h5{
+            margin-top: 4vh;
+            font-weight: bold;
+        }
+
+        hr{
+            margin-top: 1.25rem;
+        }
+
+        .col-2, .col-10{
+            padding: 0;
+        }
+
+        .row{
+            margin: 0;
+        }
+
+        form{
+            padding: 2vh 0;
+
+            input{
+                border: 1px solid rgba(0, 0, 0, 0.137);
+                padding: 1vh;
+                margin-bottom: 4vh;
+                outline: none;
+                width: 100%;
+                background-color: rgb(247, 247, 247);
+
+                &:focus::-webkit-input-placeholder{
+                    color:transparent;
+                }
+            }
+        }
+
+        .btn{
+            color: #fff;;
+            width: 100%;
+            font-size: 0.9rem;
+            padding: 1vh;
+            border-radius: 0;
+
+            &:focus{
+                box-shadow: none;
+                outline: none;
+                box-shadow: none;
+                color: white;
+                -webkit-box-shadow: none;
+                -webkit-user-select: none;
+                transition: none; 
+            }
+
+            &:hover{
+                color: #fff;;
+            }
+        }
+
+        .buy-btn{
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            margin-top: 15px;
+        }
+    }
+}
+
+.cart-empty{
+	margin-top: 50px;
+	text-align: center;
+
+    img{
+        width: 350px;
+    }
+}
+

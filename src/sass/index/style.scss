@@ -49,16 +49,10 @@ main{
                 }
 
                 a{
-                    background-color: $white-smoke;
                     padding: 8px 40px;
                     border-radius: 30px;
-                    color: $black;
-
-                    &:hover{
-                        color: $white-smoke;
-                        background-color: $pure-orange;
-                        transition: .3s;
-                    }
+                    background-color: $secondary-color;
+                    color: #fff;
                 }
 
                 @include laptop{
@@ -139,8 +133,8 @@ main{
 
             &-title{
                 font-size: $small;
-                color: $black;
                 padding: 10px;
+                color: #000;
 
                 @include laptop{
                     &{
@@ -175,7 +169,6 @@ main{
                     max-width: 185px;
                     margin-right: 5px;
                     border: none;
-                    background-color: $white-smoke;
 
                     &:hover{
                         filter: brightness(95%);
@@ -185,16 +178,16 @@ main{
         }
 
         .btn-show-catalog{
-            color: $white-smoke;
             width: 90%;
             max-width: 400px;
             border-radius: 30px;
             display: inline-block;
             text-align: center;
             padding: 8px 0;
-            background-color: $black;
             font-size: $small;
             margin: 20px 0;
+            background-color: #000;
+            color: #fff;
         }
     }
 
@@ -232,10 +225,10 @@ main{
                     position: absolute;
                     top: 50%;
                     text-align: center;
-                    color: $white-smoke;
                     font-size: $small;
                     transform: translateY(-50%);
                     padding: 10px;
+                    color: #fff;
 
                     &:hover{
                         filter: brightness(50%);
@@ -252,4 +245,3 @@ main{
 
     }
 }
-
